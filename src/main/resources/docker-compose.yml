@@ -1,0 +1,10 @@
+version: '2'
+services:
+  DummyHttpServer:
+    image: nginx
+    stdin_open: true
+    tty: true
+    ports:
+    - 8080:80/tcp
+    labels:
+      io.rancher.container.pull_image: always
